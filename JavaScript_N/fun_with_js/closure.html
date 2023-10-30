@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    // function init() {
+    //     let name = "Mozilla"; 
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+    function outer() {                          // Lexical Scoping 
+        let username = "khushi";
+        // console.log("Outer : ", secret);
+
+        function inner() {
+            let secret = "My123";
+            console.log("inner : ", username);
+        }
+
+        function innerTwo() {
+            console.log("inner Two : ", username);
+            console.log(secret);        // cann't be shared
+        }
+        inner();
+        innerTwo();
+    }
+
+    outer();
+
+    console.log("Too Outer : ", username);          // cann't obtain value for this 
+
+
+
+
+
+
+    // closure 
+
+    function makeFunc() {
+        const name = "Mozilla";
+        function displayName() {
+            console.log(name);
+        }
+        return displayName;
+    }
+
+    const myFunc = makeFunc();
+    myFunc();
+
+</script>
+
+<script>
+    // document.getElementById("orange").onclick = function() {
+    //     document.body.style.backgroundColor = 'orange';
+    // }
+
+    // document.getElementById("green").onclick = function() {
+    //     document.body.style.backgroundColor = 'green';
+    // }
+
+    function clickHandler(color) {
+        // document.body.style.backgroundColor = `${color}`;
+        // cann't do this because then the onclick needs a function , and not a function to get directly executed when invoked.
+
+        return function() {
+            document.body.style.backgroundColor = `${color}`; 
+        }
+    }
+
+    document.getElementById('orange').onclick = clickHandler("orange");
+    document.getElementById('green').onclick = clickHandler("green");
+
+
+</script>
+</html>
