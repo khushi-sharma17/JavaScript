@@ -35,3 +35,7 @@ console.log(1 + 2 + "2");
 
 console.log(+true);
 console.log(+"");
+
+let num1, num2 ;
+
+// num1 = num2 = 3 + 3        // bad practice 
