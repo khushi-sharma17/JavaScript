@@ -89,7 +89,7 @@ console.log(Instr);
 // https://api.github.com/users/hiteshchoudhary
 // from randomuser me api 
 {
-    "results": [
+    "results" = [
       {
         "gender": "female",
         "name": {
@@ -147,7 +147,7 @@ console.log(Instr);
         "nat": "US"
       }
     ],
-    "info": {
+    "info" = {
       "seed": "56d27f4a53bd5441",
       "results": 1,
       "page": 1,

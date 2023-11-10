@@ -6,7 +6,7 @@ var accountPassword = "12345";
 accountCity = "jaipur";
 let accountState;
 
-// acountId = 2;
+// acountId = 2;    // not allowed 
 accountEmail = "pri@gmail.com";
 accountPassword = "Khushi";
 accountCity = "dosa"
@@ -16,6 +16,7 @@ accountCity = "dosa"
 console.table([accountId, accountEmail, accountPassword , accountCity, accountState] )
 
 /* 
-Don't use var because of b;ock and function scope*/
+Don't use var because of block and function scope
+*/
 
 // Documentation --> tc39.es
