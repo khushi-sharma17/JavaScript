@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM four</title>
+</head>
+
+<body style="background-color: #212121; color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+    // to make a function to add list items to the ul 
+
+    // Add
+    // in this function , you have to traverse the whole thing again and again, so that's why it is not optimized
+    function addLanguage(langName) {
+        const li = document.createElement('Li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("Python")
+    addLanguage("TypeScript")
+    addLanguage("Java")
+
+
+    // Add
+    // optimized language addition 
+    function addOptiLanguage(langName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addOptiLanguage("c++");
+    addOptiLanguage("goLang");
+
+
+
+    // Edit 
+    const secondLang = document.querySelector('li:nth-child(2)')
+    // secondLang.innerHTML = "Mojo";
+    const newLi = document.createElement('li');     // here a new list is made to store the textcontent
+    newLi.appendChild(document.createTextNode("Mojo"))
+    // newLi.textContent = "Mojo";
+    secondLang.replaceWith(newLi);
+
+
+    // Edit
+    const firstLang = document.querySelector('li:first-child');
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+
+    // remove 
+    const lastLang = document.querySelector('li:last-child');
+    langName.remove()
+
+</script>
+</html> 
+
+
+<!--
+    innerHTML
+    innerText
+    outerHTML
+    textContent
+ -->
