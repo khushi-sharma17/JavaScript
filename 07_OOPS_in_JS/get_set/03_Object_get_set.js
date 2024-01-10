@@ -1,5 +1,7 @@
 // _email depicts a private property.
 
+// getter and setter through properties
+
 const User = {
     _email : 'khushiastrogeek@gmail.com',
     _password : "jdqw83y",
@@ -16,6 +18,6 @@ const User = {
 const khushi = Object.create(User)      // factory function
 
 console.log(khushi.email);
-
+// email is no 
 
 // Es2022 private properties 

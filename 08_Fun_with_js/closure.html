@@ -9,6 +9,7 @@
     <button id="orange">Orange</button>
     <button id="green">Green</button>
 </body>
+
 <script>
     // function init() {
     //     let name = "Mozilla"; 
@@ -37,7 +38,6 @@
     }
 
     outer();
-
     console.log("Too Outer : ", username);          // cann't obtain value for this 
 
 
@@ -61,16 +61,16 @@
 </script>
 
 <script>
-    // document.getElementById("orange").onclick = function() {
-    //     document.body.style.backgroundColor = 'orange';
-    // }
+    document.getElementById("orange").onclick = function() {
+        document.body.style.backgroundColor = 'orange';
+    }
 
-    // document.getElementById("green").onclick = function() {
-    //     document.body.style.backgroundColor = 'green';
-    // }
+    document.getElementById("green").onclick = function() {
+        document.body.style.backgroundColor = 'green';
+    }
 
     function clickHandler(color) {
-        // document.body.style.backgroundColor = `${color}`;
+        document.body.style.backgroundColor = `${color}`;
         // cann't do this because then the onclick needs a function , and not a function to get directly executed when invoked.
 
         return function() {

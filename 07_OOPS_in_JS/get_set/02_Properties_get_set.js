@@ -1,7 +1,10 @@
+// getter and setter through properties
+
 function User(email, password) {
     this._email = email;
     this._password = password
 
+    // parent container, property, and function
     Object.defineProperty(this, "email", {
         get : function() {
             return this._email.toUpperCase()

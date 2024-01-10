@@ -1,3 +1,4 @@
+
 const descriptor = Object.getOwnPropertyDescriptor(Math, "PI");
 console.log(descriptor);
 
@@ -21,6 +22,7 @@ console.log(chai);
 
 console.log(Object.getOwnPropertyDescriptor(chai, "name"));
 
+// object, property, function
 Object.defineProperty(chai, "name", {
     writable : false,
     enumerable : false
@@ -33,4 +35,3 @@ for (let [key, value] of Object.entries(chai)) {
         console.log(`${key} : ${value}`);
     }
 }
-
