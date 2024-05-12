@@ -3,7 +3,7 @@
 /* String , Number , Boolean , Null , undefined , Symbol, BigInt */
 // they make copy of the original values 
 
-// JavScript is a dynamically typed language.  (type defined type is not necessary)
+// JavScript is a dynamically typed language.  (type defination is not necessary)
 
 const outsideTemp = null
 let userEmail
@@ -64,6 +64,7 @@ console.log();
 //-------------------- Stack(Primitive) , Heap (Non-Primitive) -------------------------
 
 // copy in stack and refernce in heap 
+// change in original value in non - primitive and in copy in primitive types
 
 let userOne = {
     email : "khushiAsr@gmail.com",
