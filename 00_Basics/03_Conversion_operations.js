@@ -23,6 +23,16 @@ console.log(typeof StringNumber);
 console.log();
 
 
+let isLoggedIn = 1
+
+let booleanIsLoggedIn = Boolean(isLoggedIn)
+
+console.log(booleanIsLoggedIn);
+
+console.log();
+
+
+
 // conversion
 // "33" --> 33
 // "33abc" --> NaN
