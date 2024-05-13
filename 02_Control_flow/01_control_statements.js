@@ -28,7 +28,9 @@ switch(month)  {
 
 // truthy values = true, "0", "false", ' ', [], {}, function(){}
 
-const userEmail = "khushiastrogeel@gmail.com";
+const email = "khushiastrogeel@gmail.com";
+
+const userEmail = [];
 
 if(userEmail.length === 0) {
     console.log("Email is empty");
@@ -38,6 +40,7 @@ console.log();
 
 const emptyObj = {}
 
+// Object.keys(emptyObj) gives an array 
 if(Object.keys(emptyObj).length === 0) {
     console.log("object is empty");
 }
