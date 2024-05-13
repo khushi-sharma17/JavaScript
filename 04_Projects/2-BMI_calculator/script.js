@@ -1,5 +1,5 @@
 const form = document.querySelector('form');
-// whenever form is submitted through post and get , the value are sent to the server or the URL, so we need t stop the default behaviour of form
+// whenever form is submitted through post and get , the value are sent to the server or the URL, so we need to stop the default behaviour of the form
 
 // the height and weight values are taken inside the event because we don't want to take empty values before the submit.
 // this above use case will give you empty values.
