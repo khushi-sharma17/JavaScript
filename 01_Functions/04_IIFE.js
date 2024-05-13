@@ -1,5 +1,7 @@
 // Immediately Invoked Function Expressions (IIFE) --->> to remove the pollution of global scope 
 
+// It is used to immediately execute the function.
+
 (function coffee() {
     // It is a named IIFE
     console.log("DB connected ");
