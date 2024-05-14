@@ -3,6 +3,7 @@
 
 fetch('https://something.com').then().catch().finally()     // then = response, catch = error, finally = everything
 
+// creation of promises
 const promiseOne = new Promise(function(resolve, reject) {
     // Do an async task
     // DataBase calls, cryptography = code encryption , network
@@ -82,6 +83,7 @@ promiseFour                     // readability is good in this
 })
 .finally(() => console.log("the promise is either resolved or rejected"))
 
+// catch is also needed if you give reject in the Promises
 // finally will always be executed.
 
 
@@ -100,7 +102,7 @@ const promiseFive = new Promise(function(resolve, reject){
     }, 1000)
 });
 
-// async doesn't handle errors gracefully. 
+// async doesn't handle errors / catch gracefully. that's why try catch block is necessary here.
 async function consumePromiseFive(){    
     try {
         const response = await promiseFive;
@@ -134,11 +136,13 @@ consumePromiseFive()
 
 // getAllUsers()
 
+// the 'response' also takes time in the above method that's why it also has to be written with await
+
 
 
 
 // The same above method with then and catch method now
-// thenable
+// thenable == chainable
 fetch('https://jsonplaceholder.typicode.com/users')
 .then((response) => {
     return response.json();
@@ -160,7 +164,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 response = fetch(something)
 private fields : 
 data :                                      web Browser / Node 
-onfulfilled[] - promise                     network Request
+onfulfilled[] - resolve                     network Request
 onrejection[] - reject
 
 */
