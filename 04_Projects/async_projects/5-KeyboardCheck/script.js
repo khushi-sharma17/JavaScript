@@ -11,9 +11,9 @@ window.addEventListener('keydown', (e) => {
           </tr>
             
           <tr> 
-              <th>${e.key === " " ? "Space" : e.key}</th>
-              <th>${e.keyCode}</th>
-              <th>${e.code}</th>
+              <td>${e.key === " " ? "Space" : e.key}</td>
+              <td>${e.keyCode}</td>
+              <td>${e.code}</td>
           </tr>
       </table>
     </div>  
