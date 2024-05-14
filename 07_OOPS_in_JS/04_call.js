@@ -7,7 +7,7 @@ function SetUserName(username) {
 }
 
 function createUser(username, email, password) {
-    SetUserName.call(this, username)              // To hold the reference of the called function , so that its execution context doesn't get erased after being called. 
+    SetUserName.call(this, username)              // To hold the reference of the called function , so that its execution context doesn't get erased after being called, this is used here. 
     
     // SetUserName(username)  = just reference here of this
 

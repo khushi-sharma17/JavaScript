@@ -1,6 +1,6 @@
 const user = {                  // Object literal same as object
     username : "Khushi",      
-    loginCount : "8",
+    loginCount : 8,
     signedIn : true,
 
     getUserDetails : function() {
@@ -12,7 +12,7 @@ const user = {                  // Object literal same as object
 
 const user2 = {                  // Object literal
     username : "Maria",
-    loginCount : "8",
+    loginCount : 9,
     signedIn : true,
 
     getUserDetails : function() {
@@ -63,7 +63,7 @@ console.log(userOne.constructor);
 // console.log(userOne);
 // console.log(userTwo);
 
-// constructor is the refernce of about yourself
+// constructor is the refernce of about yourself, that is class or function here in these examples
 
 
 // instanceof

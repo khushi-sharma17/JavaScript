@@ -1,4 +1,5 @@
 # JavaScript and Classes
+Js is primarily a prototype based language
 
 ## OOP -> Programming paradigm
 

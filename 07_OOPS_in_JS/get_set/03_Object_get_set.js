@@ -18,6 +18,6 @@ const User = {
 const khushi = Object.create(User)      // factory function
 
 console.log(khushi.email);
-// email is no 
+// email is not a method here 
 
 // Es2022 private properties 
