@@ -70,7 +70,8 @@
     }
 
     function clickHandler(color) {
-        document.body.style.backgroundColor = `${color}`;
+        // document.body.style.backgroundColor = `${color}`;
+        
         // cann't do this because then the onclick needs a function , and not a function to get directly executed when invoked.
 
         return function() {

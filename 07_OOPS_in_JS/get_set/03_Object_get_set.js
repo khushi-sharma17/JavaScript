@@ -20,4 +20,4 @@ const khushi = Object.create(User)      // factory function
 console.log(khushi.email);
 // email is not a method here 
 
-// Es2022 private properties 
+// Es2022 private properties , new proposal
