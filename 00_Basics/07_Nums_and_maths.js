@@ -3,7 +3,7 @@
 const score = 400
 console.log(score);
 
-const balance = new Number(100.0000)         // to get more methods in console by this syntax, an then return type becomes an object
+const balance = new Number(100.0000)         // to get more methods in console by this syntax, and then return type becomes an object
 console.log(balance);
 
 console.log();
@@ -13,7 +13,7 @@ console.log(balance.toFixed(3));        // gives the decimal value upto that poi
 
 
 const otherNumber = 23.48627
-console.log(otherNumber.toPrecision(5));
+console.log(otherNumber.toPrecision(5));        // returns a string value
 
 console.log();
 const hundreds = 100000000;

@@ -20,6 +20,8 @@ coding.forEach(printMe);
 
 
 // all the parameters inside for each function 
+console.log();
+
 coding.forEach( (item, index, array) => {
     console.log(item, index, array);
 })
@@ -46,6 +48,9 @@ const myCoding = [
         languageFileName : "java"
     }
 ]
+
+
+console.log();
 
 myCoding.forEach( (item) => {
     console.log(item.languageName);

@@ -28,7 +28,7 @@ switch(month)  {
 
 // truthy values = true, "0", "false", ' ', [], {}, function(){}
 
-const email = "khushiastrogeel@gmail.com";
+const email = "khushiastrogeek@gmail.com";
 
 const userEmail = [];
 

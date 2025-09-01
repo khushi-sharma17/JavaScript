@@ -23,8 +23,7 @@
             // Requirement
             document
                 .querySelector('button')
-                .addEventListener("click", this.handleClick
-                .bind(this))        // here the reference of this constructor's library and server is binded.
+                .addEventListener("click", this.handleClick.bind(this))        // here the reference of this constructor's library and server is binded.
         }
 
         handleClick() {

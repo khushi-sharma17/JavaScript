@@ -49,6 +49,8 @@ const myFunc = function() {
     console.log("khushi Sharma");
 }
 
+myFunc()
+
 console.log(myFunc);
 console.log(typeof myFunc);        // object function 
 
@@ -63,7 +65,7 @@ console.log();
 
 //-------------------- Stack(Primitive) , Heap (Non-Primitive) -------------------------
 
-// copy in stack and refernce in heap 
+// copy in stack and reference in heap 
 // change in original value in non - primitive and in copy in primitive types
 
 let userOne = {

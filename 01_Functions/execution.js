@@ -4,9 +4,9 @@
 
 // JS is a single threaded 
 /* 
-Global Execution Context = which is reffered by "this" , and is different in browsers 
-Function EC
-Eval EC = which is a property of global , so not necessary 
+- Global Execution Context = which is reffered by "this" , and is different in browsers 
+- Function EC
+- Eval EC = which is a property of global , so not necessary 
 
 
 - Memory Creation Phase = memory is allocated 

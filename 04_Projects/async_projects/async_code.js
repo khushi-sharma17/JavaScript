@@ -32,4 +32,6 @@ Non Blocking Code -->
 /* 
 the default js engine is not asynchronous.
 
+the complete javascript runtime is asynchronous but.
+
 */

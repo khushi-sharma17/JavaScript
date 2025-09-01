@@ -8,10 +8,10 @@ const myFruits = ["banana", "apple", "mango"];
 const myArr2 = new Array(1, 2, 3, 4);   // here , simple brackets are there 
 
 // shallow copy = A shallow copy of an object is a copy whose properties share the same references (point to the same underlying values) as those of the source object from which the copy was made. 
-// like in stack 
 
 // deep copy = A deep copy of an object is a copy whose properties do not share the same references (point to the same underlying values) as those of the source object from which the copy was made. 
-// like in heap 
+
+
 
 // Array methods 
 myArr.push(7);
@@ -31,13 +31,20 @@ console.log(myArr.indexOf(4));
 console.log();
 
 
+console.log(myArr.length);
+
+
 
 const newArr = myArr.join();     // returns the value in a string 
 
 console.log(myArr);
+console.log(typeof myArr);
 console.log(newArr);     // --> datatype = string 
 console.log(typeof newArr);
 console.log();
+
+
+
 // slice, splice 
 // splice changes the original array 
 

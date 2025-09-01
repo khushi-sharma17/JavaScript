@@ -53,7 +53,7 @@ function User(username, loginCount, isLoggedIn){
 // new for new instance 
 // step 1 : empty object is created 
 // step 2 : constructor function is called bcoz of new 
-// step 3 : arguemnts are injected in this keyword
+// step 3 : arguments are injected in this keyword
 
 const userOne = new User("Khushi", 12, true);        
 const userTwo = new User("Lauren", 13, true);

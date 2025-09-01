@@ -1,6 +1,7 @@
 // In JS , everything is an object
 // Array ---> Object ---> null
 // String ---> Object ---> null
+// function is also an object
 
 function multiplyByFive(num) {
     this.num = num;     // its context is stored in the line 14 prototype

@@ -22,7 +22,12 @@ let isLoggedIn = false
 console.log(typeof (age));
 console.log(typeof nameofme);
 console.log(typeof null);           // object why ? = null is an object 
+// In JavaScript, null is a primitive value, not an object. However, due to a historical bug in the language, the typeof operator returns "object" when used on null:
+
 console.log(typeof undefined);
 
 // original Documentation --> tc39.es (ECMA standard)
 // another documentation = mdn 
+
+
+// There are around 64 keywords in javascript

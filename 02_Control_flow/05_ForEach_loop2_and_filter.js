@@ -1,6 +1,6 @@
 const coding = ["js", "ruby", "cpp", "Java", "Python", "C"]
 
-// forEach doesn't return any value.
+// forEach doesn't return any value, but filter does
 // const values = coding.forEach( (item) => {
 //     console.log(item);
 //     return item;

@@ -1,6 +1,16 @@
 // promises are mostly consumed and not that much created.
 //  The promise is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value.
 
+
+/*
+
+A Promise is in one of these states:
+- pending: initial state, neither fulfilled nor rejected.
+- fulfilled: meaning that the operation was completed successfully.
+- rejected: meaning that the operation failed.
+
+*/
+
 fetch('https://something.com').then().catch().finally()     // then = response, catch = error, finally = everything
 
 // creation of promises
@@ -51,7 +61,7 @@ promiseThree.then(function(user){
 // reject gives the error 
 const promiseFour = new Promise(function(resolve, reject){
     setTimeout(function(){
-        let error = false;
+        let error = true;
         if(!error) {
             resolve({username : "Khushi", password : "1234"});
         } else {
